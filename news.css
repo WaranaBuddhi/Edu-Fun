@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #05271dd4;
+    
+    color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    backdrop-filter: blur(20px);
+    margin-top: 100px;
+    font-size: 3rem;
+    animation: fadeInDown 1.2s ease-out;
+    text-align: center;
+}
+
+header p {
+    margin-top: 10px;
+    animation: fadeInDown 1.6s ease-out;
+    text-align: center;
+}
+
+nav{
+    
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 9999;
+    transition: 0.5s;  
+}
+nav.scrol{
+  background: rgb(0, 48, 40) ;
+}
+nav a{
+  font-size: 1.1em;
+  float: right;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  padding: 20px 16px ;
+  
+ 
+}
+nav a:hover{
+  color: aquamarine;
+
+}
+nav a span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-bottom: 2px solid aquamarine;
+  transform: scale(0) translateY(5px);
+  transition: 0.5s;
+}
+nav a:hover span{
+  transform: scale(1) translateY(5px);
+
+}
+.logo{
+    
+   
+    width: 150px;
+    height: 60px;  
+}
+.logo:hover{
+  transform: scale(1.04);
+  transition: 0.5s;
+  filter: brightness(200%);
+  cursor: pointer;      
+}
+.profile_img{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  top: 0;
+  filter: brightness(80%);
+  padding-left: -50px;
+}
+.profile_img:hover{
+  transform: scale(1.04);
+  transition: 0.3s;
+  filter: brightness(100%);
+  cursor: pointer;
+}
+
+
+.news-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    width: 90%;
+}
+
+.news-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.news-card h2 {
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.news-card p {
+    padding: 0 20px 20px;
+    font-size: 1rem;
+    color: #555;
+    animation: fadeInUp 1.4s ease-out;
+}
+
+.read-more {
+    margin: 0 20px 20px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color: #2d2e33;
+    background-image: url("footer2.jpg");
+    border-radius: 100px 100px 0 0;
+    padding: 60px 10%;
+    
+    
+    
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  .footer-col{
+    width: 25%;
+  }
+  
+  .footer-col h4{
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    color: rgb(107, 243, 204);
+    text-transform: capitalize;
+  }
+  
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #27c0ac00;
+    height: 2px;
+    width: 80px;
+  }
+  .footer-col h4:hover{
+    border-bottom: 6px  solid rgb(0, 249, 182);
+    width: 100px;
+    transition: 0.3s;
+    
+  }
+  
+  ul li:not(:last-child){
+    margin-bottom: 8px;
+  }
+  
+  ul li a{
+    display: block;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: #bdb6b6;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+  
+  ul li a:hover{
+    color: white;
+    padding-left: 2px;
+  }
+  
+  .links a{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: white;
+    background-color: rgba(1, 69, 74, 0.8);
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  .links a:hover{
+    color: #4d4f55;
+    background-color: white;
+  }
+  
+  @media(max-width: 740px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+  
+    .footer-col h4::before{
+        all: unset;
+    }
+  }
+  
+  @media(max-width: 555px){
+    .footer-col{
+        width: 100%;
+    }
+  }
+.foot-text {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

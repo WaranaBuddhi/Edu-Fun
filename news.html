@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\buddhi\Downloads\fontawesome-free-5.15.4-web\css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> News Page</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logoedu.png" alt="" class="logo">
+            <a href="#"><img src="profile.png" alt="" class="profile_img" id="profile_img"></a>
+            <a href="news.html">News<span></span></a>
+            <a href="contact.html">Contact<span></span></a>
+            <a href="index.html">Home<span></span></a>
+            <a href="#">Dashboard<span></span></a>
+            <a href="#">Leaderboard<span></span></a>
+            
+      
+        </nav>
+        <h1>Latest News</h1>
+        <p>Stay updated with the latest news from EduFun</p>
+    </header>
+
+    <section class="news-container">
+        <div class="news-card">
+            <img src="notice.jpg" alt="News Image">
+            <h2>Notice:Term Test Schedule and Guidelines</h2>
+            <p>This is to inform all students that the upcoming Term Test for the
+                 mid term will commence on 5th July 2024 and will conclude 
+                 on 10th Augest 2024. The detailed timetable for the exams has been posted on
+                 the institute's notice board and shared via the student portal.</p>
+            <button class="read-more">Read More</button>
+        </div>
+
+        <div class="news-card">
+            <img src="sports.webp" alt="News Image">
+            <h2>Sports: Asian Games 2024 Highlights in Athletics</h2>
+            <p>The Asian Games 2024 featured some remarkable 
+                performances in athletics, with new records set in track and field events. 
+                Athletes from across Asia competed in sprints, long-distance races, and field 
+                events like javelin and high jump. 
+                Sri Lankan athletes also performed well, particularly in the relay races.</p>
+            <button class="read-more">Read More</button>
+        </div>
+
+        <div class="news-card">
+            <img src="tech.png" alt="News Image">
+            <h2>Technology: RoboCup 2024: Sri Lanka's Rising Presence</h2>
+            <p>Sri Lanka is making strides in the robotics arena, especially 
+                through student participation in global competitions like RoboCup. 
+                University teams are showcasing advanced AI-driven robots capable of 
+                competing in soccer matches and performing rescue missions.</p>
+            <button class="read-more">Read More</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-col">
+            <h4>products</h4>
+            <ul>
+                <li><a href="#">teams</a></li>
+                <li><a href="#">advertising</a></li>
+                <li><a href="#">talent</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>network</h4>
+            <ul>
+                <li><a href="#">technology</a></li>
+                <li><a href="#">science</a></li>
+                <li><a href="#">business</a></li>
+                <li><a href="#">professional</a></li>
+                <li><a href="#">API</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+                <li><a href="#">about</a></li>
+                <li><a href="#">legal</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <p>&copy; 2024 News Network. All rights reserved.</p>
+            </div>
+            
+        </div>
+        
+    </footer>
+    <p class="foot-text">&copy; 2024 News Network. All rights reserved.</p>
+
+    <script   src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="news.js"></script>
+    <script>
+    
+
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $("nav").addClass("scrol");
+            }
+            else{
+                $("nav").removeClass("scrol");
+            }
+        });
+    
+    
+    
+      </script>
+</body>
+</html>

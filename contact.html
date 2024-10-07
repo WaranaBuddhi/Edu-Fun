@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\buddhi\Downloads\fontawesome-free-5.15.4-web\css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logoedu.png" alt="" class="logo">
+            <a href="#"><img src="profile.png" alt="" class="profile_img" id="profile_img"></a>
+            <a href="news.html">News<span></span></a>
+            <a href="#">Contact<span></span></a>
+            <a href="index.html">Home<span></span></a>
+            <a href="#">Dashboard<span></span></a>
+            <a href="#">Leaderboard<span></span></a>
+            
+      
+        </nav>
+    </header>
+
+    <div class="container">
+        <form id="contactForm">
+            <h2>Contact Us</h2>
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+        
+    </div>
+    <div><footer>
+        <div class="footer-col">
+            <h4>products</h4>
+            <ul>
+                <li><a href="#">teams</a></li>
+                <li><a href="#">advertising</a></li>
+                <li><a href="#">talent</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>network</h4>
+            <ul>
+                <li><a href="#">technology</a></li>
+                <li><a href="#">science</a></li>
+                <li><a href="#">business</a></li>
+                <li><a href="#">professional</a></li>
+                <li><a href="#">API</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+                <li><a href="#">about</a></li>
+                <li><a href="#">legal</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                
+            </div>
+            
+        </div>
+        
+    </footer>
+    <p class="foot-text">&copy; 2024 News Network. All rights reserved.</p>
+    </div>
+
+    <script   src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <script src="contact.js"></script>
+    <script>
+    
+
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $("nav").addClass("scrol");
+            }
+            else{
+                $("nav").removeClass("scrol");
+            }
+        });
+    
+    
+    
+      </script>
+    
+</body>
+</html>
