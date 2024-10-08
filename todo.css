@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Button Styles */
+.round-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #00221f, #014a39);
+    color: white;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.round-btn:hover {
+    transform: rotate(360deg);
+}
+
+/* Popup Section */
+.popuptodo {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: fixed;
+    top: 60%;
+    left: 75%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    z-index: 10;
+    animation: popupAnimation 0.5s ease-out forwards;
+}
+.popuptodo.visible {
+    display: flex;
+    opacity: 1;
+}
+.todotopic{
+    color: rgb(1, 42, 29);
+    text-align: center;
+}
+
+/* Popup Animation */
+@keyframes popupAnimation {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+
+/* Navbar Styles */
+.todonavbar {
+    padding: 10px;
+    margin-bottom: 20px;
+    background: transparent;
+    z-index: 9999;
+}
+
+.todonavbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45deg, #00221f, #014a39);
+    border-radius: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+.todonavbar ul li {
+    position: relative;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.todonavbar ul li:hover {
+    transform: translateY(-5px);
+}
+
+.todonavbar ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px 25px;
+    display: block;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+/* Add gradient effect on hover */
+.todonavbar ul li a:hover {
+    background: linear-gradient(45deg, #00221f, #014a39);
+    color: #fff;
+    box-shadow: 0 5px 5px rgba(64, 255, 185, 0.988);
+}
+
+/* Underline effect */
+
+
+.todonavbar ul li a:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+
+/* Section Styles */
+.section {
+    display: none;
+}
+
+.section.active {
+    margin-top: 100px;
+    display: block;
+}
+
+/* Input and Button Styles */
+input, textarea{
+    width: 93%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.todobtn {
+    background: linear-gradient(45deg, #00221f, #014a39);
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 100%;
+    height: 40px;
+}
+
+.todobtn:hover {
+    filter: brightness(150%);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
