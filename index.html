@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="C:\Users\buddhi\Downloads\fontawesome-free-5.15.4-web\css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="todo.css">
     <title>EduFun</title>
 </head>
 <body>
@@ -168,10 +169,39 @@
         <p class="foot-text">&copy; 2024 News Network. All rights reserved.</p>
    
     </div>
+    <!-- todo list popup -->
+    <button id="popupBtn" class="round-btn">+</button>
+
+    <!-- Popup Section -->
+    <div id="popupSection" class="popuptodo">
+        <nav id="todonavbar" class="todonavbar">
+            <ul>
+                <li><a href="#" id="notepadLink">Notepad</a></li>
+                <li><a href="#" id="todoLink">To-Do List</a></li>
+            </ul>
+        </nav>
+
+        <!-- Notepad Section -->
+        <div id="notepadSection" class="section active">
+            <h2 class="todotopic">Notepad</h2>
+            <input type="text" id="noteTitle" placeholder="Topic">
+            <textarea id="noteContent" placeholder="Your note here..."></textarea>
+            <button id="addNote" class="todobtn">Add Note</button>
+            <ul id="notes"></ul>
+        </div>
+
+        <!-- To-Do List Section -->
+        <div id="todoSection" class="section">
+            <h2 class="todotopic">To-Do List</h2>
+            <input type="text" id="todoInput" placeholder="New task">
+            <button id="addTodo"class="todobtn">Add Task</button>
+            <ul id="todoList"></ul>
+        </div>
+    </div>
    
 
   <script   src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  
+  <script src="todo.js"></script>
   <script  src="index.js"></script>
   <script>
     
