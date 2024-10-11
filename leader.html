@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="leader.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <img src="logoedu.png" alt="" class="logo">
+          <a href="#"><img src="profile.png" alt="" class="profile_img" id="profile_img"></a>
+          <a href="news.html">News<span></span></a>
+          <a href="contact.html">Contact<span></span></a>
+          <a href="index.html">Home<span></span></a>
+          <a href="#">Dashboard<span></span></a>
+          <a href="leader.html">Leaderboard<span></span></a>
+          
+    
+      </nav>
+      </header>
+      
+
+
+    <div class="leaderboard-container">
+        <h1>Top Students Leaderboard</h1>
+
+        <div class="leaderboard">
+            <!-- First Place -->
+            <div class="leaderboard-item first-place">
+                <div class="student-img">
+                    <img src="yasara.jpg" alt="First Place">
+                </div>
+                <div class="student-details">
+                    <h2>1st - John Doe</h2>
+                    <p>Math: 98 | Science: 95 | English: 90</p>
+                    <div class="badge gold">Gold Badge</div>
+                </div>
+            </div>
+
+            <!-- Second Place -->
+            <div class="leaderboard-item second-place">
+                <div class="student-img">
+                    <img src="sameera.png" alt="Second Place">
+                </div>
+                <div class="student-details">
+                    <h2>2nd - Jane Smith</h2>
+                    <p>Math: 92 | Science: 90 | English: 88</p>
+                    <div class="badge silver">Silver Badge</div>
+                </div>
+            </div>
+
+            <!-- Third Place -->
+            <div class="leaderboard-item third-place">
+                <div class="student-img">
+                    <img src="nawoda.png" alt="Third Place">
+                </div>
+                <div class="student-details">
+                    <h2>3rd - Mike Johnson</h2>
+                    <p>Math: 85 | Science: 87 | English: 80</p>
+                    <div class="badge bronze">Bronze Badge</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-col">
+            <h4>products</h4>
+            <ul>
+                <li><a href="#">teams</a></li>
+                <li><a href="#">advertising</a></li>
+                <li><a href="#">talent</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>network</h4>
+            <ul>
+                <li><a href="#">technology</a></li>
+                <li><a href="#">science</a></li>
+                <li><a href="#">business</a></li>
+                <li><a href="#">professional</a></li>
+                <li><a href="#">API</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+                <li><a href="about.html">about</a></li>
+                <li><a href="#">legal</a></li>
+                <li><a href="contact.html">contact us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <p>&copy; 2024 News Network. All rights reserved.</p>
+            </div>
+            
+        </div>
+        
+    </footer>
+    <p class="foot-text">&copy; 2024 News Network. All rights reserved.</p>
+
+    <script src="leader.js"></script>
+    <script   src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  
+  <script>
+    
+
+    $(window).scroll(function(){
+        if($(window).scrollTop()){
+            $("nav").addClass("scrol");
+        }
+        else{
+            $("nav").removeClass("scrol");
+        }
+    });
+
+
+
+  </script>
+</body>
+</html>
